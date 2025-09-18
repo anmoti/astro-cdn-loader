@@ -19,5 +19,8 @@
 		"@biomejs/biome": "2.2.4",
 		"@changesets/cli": "^2.29.7",
 		"@changesets/changelog-github": "^0.5.1"
+	},
+	"volta": {
+		"node": "20.18.3"
 	}
 }
