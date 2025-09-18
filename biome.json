@@ -29,6 +29,10 @@
 		}
 	},
 	"files": {
-		"includes": ["**", "!**/dist", "!**/.astro"]
+		"includes": [
+			"**",
+			"!**/dist",
+			"!**/.astro"
+		]
 	}
 }
