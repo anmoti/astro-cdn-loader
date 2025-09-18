@@ -1,0 +1,23 @@
+{
+	"name": "root",
+	"private": true,
+	"packageManager": "pnpm@10.16.1",
+	"engines": {
+		"node": ">=20.18.1"
+	},
+	"scripts": {
+		"package:dev": "pnpm --filter astro-cdn-loader dev",
+		"playground:dev": "pnpm --filter playground dev",
+		"dev": "pnpm --stream -r -parallel dev",
+		"changeset": "changeset",
+		"ci:version": "pnpm exec changeset version && pnpm install --no-frozen-lockfile && pnpm dedupe",
+		"ci:publish": "pnpm exec changeset publish && git push --follow-tags",
+		"lint": "biome check .",
+		"lint:fix": "biome check --write"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.2.4",
+		"@changesets/cli": "^2.29.7",
+		"@changesets/changelog-github": "^0.5.1"
+	}
+}
