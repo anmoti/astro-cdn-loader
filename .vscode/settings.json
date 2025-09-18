@@ -1,6 +1,8 @@
 {
 	"editor.defaultFormatter": "biomejs.biome",
 	"cSpell.words": [
-		"anmoti"
+		"anmoti",
+		"esbuild",
+		"withastro"
 	]
 }
